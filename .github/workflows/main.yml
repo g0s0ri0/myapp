@@ -27,6 +27,6 @@
        - name: Deploy to Render
          if: success()
          run: |
-           curl -X POST "https://api.render.com/deploy/srv-csldbbjqf0us738rhsig?key=rnd_lwEgnWjYDIVDelNLMufjsHj3T6xc" -H "Content-Type: application/json" -d '{}'
+           curl -X POST "https://api.render.com/deploy/srv-csof52tumphs738cvmdg?key=HumIySgGTK8" -H "Content-Type: application/json" -d '{}'
 
            
