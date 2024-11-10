@@ -18,3 +18,8 @@
            ls -l
            find . 
 
+       - name: Checkout code
+         uses: actions/checkout@v3
+
+       - name: Validacion posterior
+         run: find . 
