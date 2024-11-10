@@ -23,3 +23,10 @@
 
        - name: Validacion posterior
          run: find . 
+
+       - name: Deploy to Render
+         if: success()
+         run: |
+           curl -X POST "https://api.render.com/deploy/srv-csldbbjqf0us738rhsig?key=rnd_lwEgnWjYDIVDelNLMufjsHj3T6xc" -H "Content-Type: application/json" -d '{}'
+
+           
