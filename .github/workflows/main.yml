@@ -10,23 +10,13 @@
        runs-on: ubuntu-latest
 
        steps:
-       - name: Validacion previa
-         run: |
-           date
-           hostname
-           pwd
-           ls -l
-           find . 
 
        - name: Checkout code
          uses: actions/checkout@v3
 
-       - name: Validacion posterior
-         run: find . 
-
        - name: Deploy to Render
          if: success()
          run: |
-           curl -X POST "https://api.render.com/deploy/srv-csof52tumphs738cvmdg?key=HumIySgGTK8" -H "Content-Type: application/json" -d '{}'
+           curl -X POST "https://api.render.com/deploy/srv-d0rrpc95pdvs738ukekg?key=Zacen2ugZbg" -H "Content-Type: application/json" -d '{}'
 
            
